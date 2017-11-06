@@ -1,0 +1,128 @@
+
+/* Variables */
+:root{
+/* Colors variables */
+--nightBlue: #2C303B;
+--midnightBlue: #161c2b;
+--ghostWhite:  #f8f8ff;
+--henBrown: #654A58;
+
+
+/*RGB color variables*/
+  --nightBlueRGB: rgb(44,48,59);
+  --midnightBlueRGB: rgb(22,28,43);
+  --ghostWhiteRGB:  rgb(248,248,255);
+
+/* Font type variables */
+  --workSans: 'Work Sans', sans-serif;
+  --openSans: 'Open Sans', sans-serif;
+  --Lato: 'Lato';
+
+/* Font size variables CHANGES WITH SCREEN SIZE*/
+  --title: 5vw;
+  --caption: 1vw;
+  --tempSize: 3.5vw;
+  --reccSize: 3vw;
+}
+
+html, body{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: var(--Lato);
+   font-weight: 300;
+   color: var(--ghostWhite);
+   background-color: var(--nightBlue);
+}
+
+h1{
+   font-size: 3em;
+   font-weight: 300;
+}
+
+/*outer wrap that centers everything nicely*/
+.containerWrap{
+   position: fixed;
+   top: 15%;
+   left: 10%;
+   width: 100%;
+   height: 70%;
+   display: flex;
+   flex-direction: row;
+}
+
+/*Wrap for the colourlover palletes*/
+.colorWrap{
+   width: 20%;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   height: 100%;
+   border: 1px solid var(--ghostWhite);
+   border-top-left-radius: : 3px;
+   border-bottom-left-radius: 3px;
+
+}
+
+#colorBar1, #colorBar2, #colorBar3, #colorBar4, #colorBar5{
+   height: 20%;
+   width: 100%;
+   background-color: var(--ghostWhite);
+   transition: background-color 0.7s;
+}
+
+.descriptionWrap{
+   width: 60%;
+   height: 100%;
+   /*background-color: var(--nightBlue);*/
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   border: 1px solid var(--ghostWhite);
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+}
+
+.descriptionHeader{
+   width: 100%;
+   height: 70%;
+   display:flex;
+   justify-content: center;
+   align-self: flex-end;
+   flex-direction: column;
+   text-align: center;
+}
+
+button{
+   cursor: pointer;
+   cursor: hand;
+   display:inline;
+   text-decoration: none;
+   cursor: pointer;
+   color:  var(--ghostWhite);
+   font-size: 1em;
+   font-weight: 300;
+   border: 1px solid  var(--midnightBlue);
+   background-color: var(--midnightBlue);
+   border-radius: 3px;
+}
+
+button:after{
+    position:relative;
+    bottom:0;
+    left:50%;
+    height:1px;
+    width:0%;
+    background-color:var(--ghostWhite);
+    display:block;
+    content:'';
+    transition:0.3s;
+}
+
+button:hover:after{
+    left:0;
+    width:100%;
+}
