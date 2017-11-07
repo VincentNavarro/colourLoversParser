@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // global variables and functions
 window.palettes = []
 window.currentPalette = 0
@@ -32,3 +33,5 @@ function changeColors(){
       $(this).text(palettes[currentPalette][0].toUpperCase())
    }).fadeIn('fast');
 }
+
+)};
