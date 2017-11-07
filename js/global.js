@@ -1,8 +1,8 @@
 // global variables and functions
-const palettes = [];
-var currentPalette = 0;
-var nextPalette = 0;
-var backPalette = 0;
+window.palettes = []
+window.currentPalette = 0
+window.nextPalette = 0
+window.backPalette = 0
 
 function setPalette(){
    // Set backPalette
