@@ -16,7 +16,7 @@ $(document).ready(function(){
 
             palettes[i] = tempArr;
          }
-   });
+   }, 'json');
 
 
 });
